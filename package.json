@@ -1,0 +1,22 @@
+{
+  "name": "wheres-my-music-server",
+  "version": "0.0.1",
+  "description": "api server for where's my music app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjordanball/Wheres-My-Music-Server.git"
+  },
+  "author": "CJB3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjordanball/Wheres-My-Music-Server/issues"
+  },
+  "homepage": "https://github.com/cjordanball/Wheres-My-Music-Server#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
