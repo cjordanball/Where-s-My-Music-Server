@@ -1,24 +1,29 @@
 {
-  "name": "wheres-my-music-server",
-  "version": "0.0.1",
-  "description": "api server for where's my music app",
-  "main": "index.js",
-  "scripts": {
-    "runServer": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cjordanball/Wheres-My-Music-Server.git"
-  },
-  "author": "CJB3",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cjordanball/Wheres-My-Music-Server/issues"
-  },
-  "homepage": "https://github.com/cjordanball/Wheres-My-Music-Server#readme",
-  "dependencies": {
-    "express": "^4.16.4",
-    "express-graphql": "^0.7.1",
-    "graphql": "^14.1.1"
-  }
+    "name": "wheres-my-music-server",
+    "version": "0.0.1",
+    "description": "api server for where's my music app",
+    "main": "index.js",
+    "scripts": {
+        "runServer": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cjordanball/Wheres-My-Music-Server.git"
+    },
+    "author": "CJB3",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cjordanball/Wheres-My-Music-Server/issues"
+    },
+    "homepage": "https://github.com/cjordanball/Wheres-My-Music-Server#readme",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "connect-mongo": "^2.0.3",
+        "express": "^4.16.4",
+        "express-graphql": "^0.7.1",
+        "express-session": "^1.15.6",
+        "graphql": "^14.1.1",
+        "mongoose": "^5.4.17",
+        "nodemon": "^1.18.10"
+    }
 }

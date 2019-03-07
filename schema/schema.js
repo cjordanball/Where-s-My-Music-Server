@@ -3,7 +3,9 @@ const data = require('../sampleData.js');
 
 const {
 	GraphQLObjectType,
-	GraphQLString
+	GraphQLString,
+	GraphQLSchema,
+	GraphQLList
 } = graphql
 
 const ScoreType = new GraphQLObjectType({
@@ -19,6 +21,13 @@ const ScoreType = new GraphQLObjectType({
 const RootQuery = new GraphQLObjectType({
 	name: 'RootQueryType',
 	fields: {
+		scores: {
+			type: GraphQLList(ScoreType),
+			args:{},
+			resolve(parentValue, args) {
+				return data;
+			}
+		},
 		score: {
 			type: ScoreType,
 			args: { id: { type: GraphQLString } },
@@ -29,4 +38,8 @@ const RootQuery = new GraphQLObjectType({
 			}
 		}
 	}
+});
+
+module.exports = new GraphQLSchema({
+	query: RootQuery
 });
