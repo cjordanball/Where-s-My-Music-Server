@@ -1,8 +1,14 @@
-var http = require('http');
+const express = require('express');
+const expressGraphQL = require('express-graphql');
+const schema = require('./schema/schema');
+const app = express();
 
-const server = http.createServer((req, res) => {
-	res.writeHead(200, {contentType: 'text/html'})
-	res.end('<h1>Welcome to the WMM API!')
+app.use('/graphql', expressGraphQL({
+	schema,
+	graphiql:true
+}))
+
+
+app.listen(3600, () => {
+	console.log('Here we go!')
 });
-
-server.listen(3600)
