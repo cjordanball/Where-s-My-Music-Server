@@ -7,4 +7,6 @@ const ScoreSchema = new Schema({
 	descriptions: { type: String }
 });
 
-mongoose.model('score', ScoreSchema);
+const Score = mongoose.model('score', ScoreSchema);
+
+module.exports = Score;
