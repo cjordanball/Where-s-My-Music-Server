@@ -15,7 +15,8 @@ const ScoreType = new GraphQLObjectType({
 		id: { type: GraphQLID },
 		name: { type: GraphQLString },
 		description: { type: GraphQLString },
-		composer: { type: GraphQLString }
+		composer: { type: GraphQLString },
+		linkURL: { type: GraphQLString }
 	})
 });
 
